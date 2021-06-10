@@ -1,7 +1,3 @@
-// console.dir(window.document)
-// console.dir(window.document.characterSet)
-// console.dir(window.document.children)
-
 var buttonEl = document.querySelector('button');
 // console.log(buttonEl)
 
@@ -24,20 +20,3 @@ buttonEl.addEventListener("click", function() {
     taskListEl.appendChild(taskItemEl);
 
 });
-
-var imgButtonEl = document.querySelector("#img");
-imgButtonEl.addEventListener("click", function() {
-    var imgSection = document.querySelector(".images");
-    var newImgEl = document.createElement("img");
-    newImgEl.src = "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80";
-
-    var captionEl = document.createElement("p");
-    captionEl.textContent = 'Photo by Glenn Carstens-Peters';
-
-
-    imgSection.appendChild(newImgEl);
-    imgSection.appendChild(captionEl);
-
-
-
-})
