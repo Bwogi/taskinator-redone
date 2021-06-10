@@ -219,6 +219,11 @@ footer {
     font-size: 2rem;
 }
 
+img {
+    width: 300px;
+    padding: 20px;
+}
+
 @media screen and (max-width: 980px) {
     form .form-group {
         flex: 1 100%;
