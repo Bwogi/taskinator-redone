@@ -1,6 +1,9 @@
 var buttonEl = document.querySelector('button');
 // console.log(buttonEl)
 
+// Ask TA about refactoring this code as in
+// var createTaskHandler = function(){}
+
 buttonEl.addEventListener("click", function() {
     // qns: where in the html code do you want to place the list item? ul.task-list
     // which element type do you want to create? li 
