@@ -3,7 +3,7 @@ var formEl = document.querySelector('#task-form');
 var listEl = document.querySelector('#tasks-to-do');
 
 
-const TaskFormHandler = (event) => {
+const taskFormHandler = (event) => {
     // don't reload or refresh page 
     event.preventDefault();
     // var nameInput = document.querySelector('#task-name');
@@ -39,4 +39,4 @@ var createTaskEl = (theObject) => {
     listEl.appendChild(taskInfoEl);
 };
 
-formEl.addEventListener("submit", TaskFormHandler);
+formEl.addEventListener("submit", taskFormHandler);
