@@ -25,7 +25,9 @@ const taskFormHandler = (event) => {
         name: nameInput,
         type: selectInput
     };
-    // send the object as an argument to create tasks 
+    console.log(taskDataObj)
+    console.dir(taskDataObj)
+        // send the object as an argument to create tasks 
     createTaskEl(taskDataObj);
 };
 
