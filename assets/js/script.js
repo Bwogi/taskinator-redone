@@ -10,6 +10,16 @@ const taskFormHandler = (event) => {
     var nameInput = document.querySelector("input[name='task-name']").value;
     // var selectInput = document.querySelector('#task-type')
     var selectInput = document.querySelector("select[name='task-type']").value;
+    // check if values empty 
+    if (!nameInput || !selectInput) {
+        var theAlert = document.querySelector("#alert");
+        theAlert.setAttribute("style", "color:red");
+        theAlert.textContent = "You will need to fill out the task form";
+
+
+        alertArea.appendChild(theAlert);
+        console.log("empty")
+    }
 
     // package up the data into an object 
     var taskDataObj = {
@@ -28,7 +38,6 @@ var createTaskEl = (theObject) => {
     var listItemEl = document.createElement('li');
     // give it a class name 
     listItemEl.className = 'task-item';
-
     // lets create a div to hold the task client Information
     var taskInfoEl = document.createElement("div");
     // give it a class 
