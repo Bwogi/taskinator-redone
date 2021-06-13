@@ -15,20 +15,18 @@ const taskFormHandler = (event) => {
         var theAlert = document.querySelector("#alert");
         theAlert.setAttribute("style", "color:red");
         theAlert.textContent = "You will need to fill out the task form";
-
-
-        alertArea.appendChild(theAlert);
-        console.log("empty")
+        return false;
     }
-
+    // reset form 
+    formEl.reset();
     // package up the data into an object 
     var taskDataObj = {
         name: nameInput,
         type: selectInput
     };
-    console.log(taskDataObj)
-        // send the object as an argument to create tasks 
+    // send the object as an argument to create tasks 
     createTaskEl(taskDataObj);
+
 
 
 }
